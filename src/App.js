@@ -3,13 +3,8 @@ import { RiBitCoinFill, RiHeart3Fill, RiLock2Fill } from "react-icons/ri";
 
 function App() {
   return (
-    <main>
-      <header></header>
-      <body>
-        <img
-          src="https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-          alt="Foto de David McBee no Pexels"
-        />
+    <body>
+      <div className="background">
         <div className="leftSide">
           <div className="title">
             <h1>CryptoNow</h1>
@@ -80,13 +75,12 @@ function App() {
             </div>
           </form>
         </div>
-        <footer>
+        <div className="footer">
           Isso é uma obra de ficção. Todo conteúdo é apenas um mero
-          estudo/portifólio. Feito com humor e carinho por mim, Pedrokidev{" "}
-          <RiHeart3Fill />
-        </footer>
-      </body>
-    </main>
+          estudo/portifólio. Feito com humor e carinho por mim, Pedrokidev <RiHeart3Fill color="red" />
+        </div>
+      </div>
+    </body>
   );
 }
 
