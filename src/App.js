@@ -4,6 +4,7 @@ import { RiBitCoinFill, RiHeart3Fill, RiLock2Fill } from "react-icons/ri";
 function App() {
   return (
     <body>
+      <img src="https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
       <div className="background">
         <div className="leftSide">
           <div className="title">
@@ -12,7 +13,7 @@ function App() {
               Sua solução DEFINITIVA para ganhar dinheiro com criptomoedas!!!
             </h2>
           </div>
-          <div className="introtext">
+          <div className="introText">
             Nossa empresa está 100% dedicada em fazer VOCÊ uma pessoa bem
             sucedida no mundo das criptomoedas. Temos uma equipe completa e bem
             preparada que te dará todos os atalhos e segredos mais bem guardados
@@ -24,25 +25,25 @@ function App() {
             fique mais próximo do tão desejado PRIMEIRO MILHÃO <RiBitCoinFill />{" "}
             em investimentos.
           </div>
-        </div>
-        <div className="rightSide">
-          <h3>Preencha o formulário</h3>
-          <div>
+          <div className="secText">
             Não se preocupe, pois, todas as informarções fornecidas estarão bem
             guardadas em nosso sistema criptografado e NINGUÉM irá ter acesso a
             essas informações além do nosso banco de dados SUPER PROTEGIDO{" "}
             <RiLock2Fill />.
           </div>
+        </div>
+        <div className="rightSide">
+          <h3>Preencha o formulário</h3>
           <form action="/pagina-de-dados" method="post">
-            <div>
+            <div className="nome">
               <label for="nome">Nome: </label>
               <input type="text" id="nome" placeholder="Digite seu nome" />
             </div>
-            <div>
+            <div className="tel">
               <label for="tel">Telefone: </label>
               <input type="tel" id="tel" placeholder="Ex: (xx) xxxxx-xxxx" />
             </div>
-            <div>
+            <div className="profissao">
               <label for="profissao">Profissão: </label>
               <input
                 type="text"
@@ -50,11 +51,11 @@ function App() {
                 placeholder="Digite sua profissão"
               />
             </div>
-            <div>
+            <div className="nameCard">
               <label for="nameCard">Nome impresso no cartão: </label>
               <input type="text" id="nameCard" placeholder="Digite o nome" />
             </div>
-            <div>
+            <div className="numCard">
               <label for="numCard">Número do cartão: </label>
               <input
                 type="number"
@@ -62,11 +63,11 @@ function App() {
                 placeholder="xxxx-xxxx-xxxx-xxxx"
               />
             </div>
-            <div>
+            <div className="date">
               <label for="date">Data de vencimento: </label>
               <input type="month" id="date" />
             </div>
-            <div>
+            <div className="cod3d">
               <label for="cod3d">Código de segurança: </label>
               <input type="number" id="cod3d" placeholder="Ex: xxx" />
             </div>
